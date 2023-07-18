@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Outfit';
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-block: 1rem;
+    z-index: 999;
+}
+
+header.navbar-container .logo img {
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+   
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+   
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #212121;
+    padding: .5rem 1.5rem;
+    border-radius: 16px;
+    transition: all .2s ease-in-out;
+}
+   
+header.navbar-container .nav-list li:hover a {
+    background-color: #6D9886;
+    color: white;
+}
+
+main {
+    margin-inline: auto;
+    padding-bottom: 0;
+    flex: 1;
+}
+
+main .home {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 120px 0;
+}
+   
+main .home .home-description {
+    flex: 1 1;
+    margin-left: 190px;
+}
+   
+main .home .home-description .title {
+    font-size: 3.5rem;
+    margin-block: 1rem;
+}
+   
+main .home .home-description p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+   
+main .home .home-description button {
+    padding: .6rem 1.8rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+    color: #6D9886;
+   
+    border: 3px solid transparent;
+    border-radius: 0;
+    background-color: #D9CAB3;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+   
+main .home .home-description button:hover {
+    border: 3px solid #6D9886;
+    color: #D9CAB3;
+    background-color: transparent;
+}
+
+main .home .home-image {
+    flex: 1;
+    display: flex;
+}
+   
+main .home .home-image img {
+    margin: auto;
+    min-width: 300px;
+    width: 400px;
+}
+
+main .feature {
+    padding: 30px;
+    text-align: center;
+    background-color: #D9CAB3;
+}
+
+main .feature-title {
+    margin-top: 45px;
+}
+
+.feature-content {
+    width: 800px;
+    height: 230px;
+    margin: 45px auto;
+}
+
+.left-content {
+    text-align: center;
+    line-height: 25px;
+    padding: 50px 10px;
+    width: 33.3%;
+    height: 90%;
+    background-color: #6D9886;
+    border: 5px solid #D9CAB3;
+    float: left;
+    margin: 0%;
+}
+
+.center-content {
+    text-align: center;
+    line-height: 25px;
+    padding: 50px 10px;
+    width: 33.3%;
+    height: 90%;
+    background-color: #D9CAB3;
+    border: 3px solid #6D9886;
+    float: left;
+}
+
+.right-content {
+    text-align: center;
+    line-height: 25px;
+    padding: 50px 10px;
+    width: 33.3%;
+    height: 90%;
+    background-color: #6D9886;
+    border: 5px solid #D9CAB3;
+    float: left;
+}
+
+main .destination {
+    margin-top: 50px;
+}
+
+.destination-content {
+    margin: auto;
+}
+
+.tokyo-tower, .shibuya-district, .robot-restaurant {
+    margin: 5px 10px;
+    padding: 2px 20px;
+    text-align: left;
+    line-height: 20px;
+    color: #F6F6F6;
+    width: 95%;
+    height: 10%;
+    background-color: #6D9886;
+    border: 3px solid #212121;
+    border-radius: 5px;
+    float: center;
+}
+
+.asakusa-district, .fuji-mountain {
+    margin: 5px 10px;
+    padding: 2px 20px;
+    text-align: left;
+    line-height: 20px;
+    color: #212121;
+    width: 95%;
+    height: 10%;
+    background-color: #D9CAB3;
+    border: 3px solid #212121;
+    border-radius: 5px;
+    float: center;
+}
+
+main #destination .destination-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+main .destination-content .destination-left img {
+    margin-left: 190px;
+    margin-right: 80px;
+    min-width: 250px;
+    width: 500px;
+}
+
+.destination-left .title {
+    margin-left: 190px;
+}
+
+main .destination-right {
+    margin-right: 190px;
+}
+
+main .main-review {
+    background-color: #212121;
+    margin-top: 40px;
+    padding-bottom: 70px;
+}
+
+.review h3 {
+    color: #212121;
+    text-align: center;
+}
+
+.review-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-inline: 220px;
+}
+
+.review {
+    border: 4px solid #6D9886;
+    background-color: #D9CAB3;
+    border-radius: 10px;
+    color: #212121;
+    margin: 5px;
+    padding: 15px;
+    width: 30%;
+}
+
+.review-title {
+    color: #F6F6F6;
+    padding: 25px 25px 25px 0;
+    margin-left: 190px;
+}
+
+main .contact {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#contact {
+    margin-top: 0;
+    padding: 18px 0;
+    background-color: #6D9886;
+}
+
+.contact-left {
+    margin-left: 190px;
+    width: 30%;
+}
+
+.contact-left h1 {
+    color: #212121;
+}
+
+.contact-left p {
+    color: #F6F6F6;
+}
+
+.contact-right {
+    width: 100%;
+    margin-right: 210px;
+}
+
+.contact-right ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.contact-right li {
+    list-style-type: none;
+}
+
+.contact-right li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #212121;
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+   
+main aside .profile {
+    height: 100%;
+    display: flex;
+    color: #F6F6F6;
+}
+   
+main aside .profile ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 3px solid #D9CAB3;
+    background-color: #6D9886;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+main aside .profile ul img {
+    width: 60px;
+    border-radius: 0;
+}
+
+main aside .profile li {
+    list-style-type: none;
+}
+
+footer {
+    padding: 4px;
+    color: white;
+    background-color: #D9CAB3;
+    text-align: center;
+}
+
+footer p {
+    margin: 6px 0px;
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main {
+        padding: 1rem 3rem;
+        padding-bottom: 0;
+    }
+
+    main .home, .feature, .destination-content, .main-review {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0;
+    }
+
+    main .home .home-description p {
+        font-size: 1rem;
+    }
+
+    main .content .home-image {
+        order: -1;
+    }
+
+    main .feature .feature-content {
+        font-size: 1rem;
+        align-items: center;
+        width: auto;
+    }
+
+    main .destination .destination-left {
+        font-size: 1rem;
+    }
+
+    main .destination .destination-left {
+        order: -1;
+    }
+
+    main .destination .destination-right {
+        font-size: 1rem;
+        align-items: center;
+        width: auto;
+    }
+
+    main .review-content {
+        font-size: 1rem;
+        align-items: start;
+        flex-direction: column;
+        width: 250%;
+    }
+
+    main .contact {
+        flex-direction: row;
+        gap: 2rem;
+        margin: 0;
+    }
+
+    main .contact .contact-left {
+        font-size: 1rem;
+    }
+}
